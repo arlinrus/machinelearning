@@ -27,8 +27,11 @@ venv/od_1_ml.py
 
 Предиктор - колво товаров(х1)
 
-Отклик - время в мгх(y
+Отклик - время в мгх(y)
 <img width="600" alt="Снимок экрана 2024-01-16 в 17 36 23" src="https://github.com/arlinrus/machinelearning/assets/111064731/4a49a141-03be-47bc-99df-efb57578ad01">
+
+
+<img width="1052" alt="Снимок экрана 2024-01-16 в 17 40 42" src="https://github.com/arlinrus/machinelearning/assets/111064731/8fec1e08-a3e4-4355-bf96-2914ed511904">
 
 
 <img width="693" alt="Снимок экрана 2024-01-16 в 17 37 36" src="https://github.com/arlinrus/machinelearning/assets/111064731/30fcbcc5-a3b3-4500-bef4-9f8efe2d7c34">
