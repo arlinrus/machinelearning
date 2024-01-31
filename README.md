@@ -96,3 +96,5 @@ print(r2_score(Y_train, y_predict)) #оценка точности модели
 
 
 
+
+
