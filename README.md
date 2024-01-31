@@ -50,6 +50,45 @@ y = 4.06 + 0.93x1
 LinearReгрессия соответствует линейной модели с коэффициентами w = (w1,…, wp), чтобы минимизировать остаточную сумму квадратов между наблюдаемыми целями в наборе данных и целями, предсказанными с помощью линейного приближения.
 
 С точки зрения реализации, это просто обычные методы наименьших квадратов (scipy.linalg.lstsq) или неотрицательные наименьшие квадраты (scipy.optimize.nnls), завернутые в объект предиктора.
+***Ссылка на изучение sklearn***: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
+
+```from sklearn.linear_model import LinearRegression
+import numpy as np
+import io #для работы с различными типами ввода и вывода
+import pandas as pd
+from sklearn.metrics import r2_score
+
+data = '''id,X,Y
+1,6,19
+2,3,11
+3,10,24
+4,4,14
+5,2,7
+6,11,26
+7,23,62
+8,21,47
+9,20,48
+10,14,27'''
+
+data = pd.read_csv(io.StringIO(data), index_col = "id")
+print(data)
+
+#print(data.Y.mean()) #определили выборочные срение из столбцов
+#print(data.X.mean())
+
+X_train = pd.DataFrame(data.X)
+Y_train = pd.DataFrame(data.Y)
+
+reg_model = LinearRegression().fit(X_train, Y_train)#обучили модель
+#print(reg_model.coef_) #teta 1
+#print(reg_model.intercept_)#teta 0
+
+y_predict = reg_model.predict(X_train)
+print(y_predict) #to predict we need to make model with training datas
+
+print(r2_score(Y_train, y_predict)) #оценка точности модели
+```
+
 
 
 
