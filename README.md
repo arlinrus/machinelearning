@@ -89,8 +89,7 @@ print(y_predict) #to predict we need to make model with training datas
 print(r2_score(Y_train, y_predict)) #оценка точности модели
 ```
 
-
-
+# Задача классификаций
 
 
 
