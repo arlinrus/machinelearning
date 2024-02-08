@@ -109,5 +109,11 @@ print(r2_score(Y_train, y_predict)) #оценка точности модели
 
 ![Снимок экрана (14)](https://github.com/arlinrus/machinelearning/assets/111064731/84f5f2d5-759f-4196-90e2-bf51acadea09)
 
+## Сглаживание по Лапласу 
+Предположить, что мы видели каждое слово на один раз больше.
+
+![Снимок экрана (15)](https://github.com/arlinrus/machinelearning/assets/111064731/c90bc324-a191-47b6-830a-6108c8810d58)
+
+
 
 
